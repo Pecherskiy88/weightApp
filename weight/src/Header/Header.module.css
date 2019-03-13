@@ -1,0 +1,19 @@
+.header {
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    align-self: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.img{
+    max-width: 100px;
+}
+.btnTheme{
+    color: #ffffff;
+    font-size: 1.5rem;
+}

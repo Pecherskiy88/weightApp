@@ -1,0 +1,44 @@
+.imt {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    justify-content: space-around;
+    
+}
+
+.currentWeight {
+    width: 40%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+.wishWeight {
+    width: 40%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 60px;
+
+}
+
+.weight {
+    color: red;
+    font-size: 32px;
+}
+.weightWish{
+    color: green;
+    font-size: 32px;
+}
+.text {
+    color: grey;
+}
+.date {
+    color: grey;
+}
+.delta {
+    color: red;
+}
+.speed {
+    margin: auto;
+}

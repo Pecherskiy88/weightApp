@@ -1,0 +1,9 @@
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.imt, .weight, .history{
+    color: grey;
+    text-decoration: none;
+}

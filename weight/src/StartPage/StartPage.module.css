@@ -1,0 +1,26 @@
+.startPage {
+    background-image: url('./Screenshot_2019-03-13-09-59-42-630_de.aktiwir.aktibmi.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+.form{
+    width: 30%;
+    display: block;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.input{
+    border: 1px solid green;
+    margin: 5px 0;
+}
+.btn{
+background-color: green;
+border: none;
+padding: 5px 10px;
+text-decoration: none;
+color: #ffffff;
+}
