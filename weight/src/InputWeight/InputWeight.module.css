@@ -1,0 +1,22 @@
+
+
+
+.InputWeightOpen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(233, 227, 227);
+    transition: 0.3s;
+}
+.InputWeightClose {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(233, 227, 227);
+    transition: 0.3s;
+
+}

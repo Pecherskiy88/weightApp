@@ -1,16 +1,17 @@
 import React from 'react';
-import Img from './Speed.jpg'
 import ReactSpeedometer from "react-d3-speedometer";
 import s from './Imt.module.css';
 
 const Imt = () => {
     const obj = JSON.parse(localStorage.getItem('userInfo'));
+
     const date = new Date();
     const day = date.getDate();
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
     const fullDate = `${day}.${month}.${year}`
     const delta = (Number(obj.weight) - Number(obj.wishWeight)).toFixed(1);
+
     
     
     
@@ -26,10 +27,17 @@ const Imt = () => {
            <p className={s.weightWish}>{`${obj.wishWeight} кг`}</p>
            <p className={s.delta}>{`${delta} кг - осталась разница`}</p>
            </div> 
-           {/* <img className={s.speed} src={Img} alt=""/> */}
+           <span className={s.spanIndex}>Индекс массы тела</span>
            <ReactSpeedometer
+           minValue={0}
            maxValue={40}
-           segments={3}
+           segments={10}
+            value={obj.index}
+            startColor='lightGreen'
+            endColor='red'
+            width={320}
+            needleTransitionDuration={2000}
+               needleTransition="easeElastic"
            />
           
 

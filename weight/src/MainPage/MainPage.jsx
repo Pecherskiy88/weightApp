@@ -5,17 +5,19 @@ import {Switch, Route} from 'react-router-dom';
 import Imt from '../Imt/Imt';
 import Weight from '../Weight/Weight';
 import History from '../History/History';
+import InputWeight from '../InputWeight/InputWeight';
 
-const MainPage = () => {
+const MainPage = ({openModal, modalClick,saveNewInput, saveNewWeight}) => {
     return (
         <div>
-            <Header/>
+            <Header openModal = {openModal}/>
             <Nav/>
             <Switch>
-                <Route path='/mainPage/imt' component={Imt}/>
-                <Route path='/mainPage/weight' component={Weight}/>
+                <Route exact path='/mainPage' component={Imt}/>
+                <Route path='/mainPage/weight' render = {props => <Weight {...props}/>}/>
                 <Route path='/mainPage/history' component={History}/>
             </Switch>
+            <InputWeight modalClick = {modalClick} saveNewInput = {saveNewInput} saveNewWeight = {saveNewWeight}/>
         </div>
     );
 };

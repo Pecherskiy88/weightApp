@@ -9,13 +9,13 @@
 }
 
 .currentWeight {
-    width: 40%;
+    width: 35%;
     border: 1px solid grey;
     border-radius: 10px;
     margin-bottom: 60px;
 }
 .wishWeight {
-    width: 40%;
+    width: 35%;
     border: 1px solid grey;
     border-radius: 10px;
     margin-bottom: 60px;
@@ -41,4 +41,7 @@
 }
 .speed {
     margin: auto;
+}
+.spanIndex {
+    padding: 10px;
 }
